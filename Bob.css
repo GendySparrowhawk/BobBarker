@@ -41,7 +41,7 @@ padding-bottom: 30px;
     cursor: pointer;
 }
 
-#punch:hover{
+.punch:hover{
 background-color: white;
 color: black;
 }
@@ -53,3 +53,4 @@ color: black;
     border-radius: 4px;
     background-color: rgb(110, 73, 145);
 }
+
