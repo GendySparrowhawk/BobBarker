@@ -57,7 +57,7 @@ body {
 
 }
 
-#answers {
+#options {
     display: flex;
     flex-direction: column;
     max-width: 30%;
@@ -67,12 +67,26 @@ body {
     transition: all .5s;
     cursor: pointer;
 }
-
-.punch:hover {
+.next { 
+    margin: 5px;
+    padding: 6px;
+    color: aliceblue;
+    border-radius: 4px;
+    background-color: rgb(110, 73, 145);
+    cursor: pointer;
+    
+}
+.punch:hover:not([disabled]) {
     background-color: white;
     color: black;
 }
+.correct {
+    background-color: rgb(107, 179, 89);
+}
 
+.wrong {
+    background-color: red;
+}
 .punch {
     margin: 5px;
     padding: 6px;
