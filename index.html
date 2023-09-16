@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Bob.css">
+    <link rel="icon" href="./istockphoto-1298266863-612x612.jpg">
+    
     <title>Test Your Might</title>
 </head>
 
 <body>
     <h1>Things I learned from Podcasts</h1>
+    <h2 id="subheadder">These are all things I heard on a pdcast and have been in no way doubble checked</h2>
     <button id="start">start</button>
     <div id="timer" class="hide"></div>
     <div class="window hide">
@@ -18,9 +21,19 @@
             <div id="options">
                 <button class="punch">wrong answer</button> <button class="punch">wrong answer</button> <button
                     class="punch">wrong answer</button> <button class="punch">wrong answer</button>
-                <button class="next hide">Next</button>
             </div>
+            <button class="next hide">Next</button>
         </div>
+        <form class="score-form hide">
+            <input type="text" id="name" placeholder="Your Name">
+
+            <button class="endscreen" id="submit">submit</button>
+            <h2 id="score"></h2>
+            <ol id="highscores"></ol>
+            <button class="endscreen" id="clear-score">Clear Scores</button>
+            <button class="endscreen" id="play-again">Try Again</button>
+        </form>
+
     </div>
 </body>
 <script src="./quiz.js"></script>
