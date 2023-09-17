@@ -7,11 +7,13 @@ body {
 .hide {
     display: none;
 }
+
 h1 {
     color: aliceblue;
     font-size: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
+
 #subheadder {
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -30,7 +32,8 @@ h1 {
 
 #start:hover {
     border: 2px solid black inset;
-    background-color: rgb(93, 41, 141);;
+    background-color: rgb(93, 41, 141);
+    ;
 }
 
 #timer {
@@ -77,7 +80,8 @@ h1 {
     transition: all .5s;
     cursor: pointer;
 }
-.next { 
+
+.next {
     font-size: 20px;
     margin: 5px;
     padding: 6px;
@@ -85,17 +89,20 @@ h1 {
     border-radius: 4px;
     background-color: rgb(110, 73, 145);
     cursor: pointer;
-    
+
 }
+
 .punch:hover:not([disabled]) {
     background-color: white;
     color: black;
 }
+
 .wrong {
-    background-color: red!important ;
+    background-color: red !important;
 }
+
 .correct {
-    background-color: rgb(107, 179, 89)!important;
+    background-color: rgb(107, 179, 89) !important;
 }
 
 .punch {
@@ -111,7 +118,7 @@ h1 {
 
 #highscores {
     margin-top: 5px;
-    padding: 0!important;
+    padding: 0 !important;
     font-weight: bold;
     list-style-position: inside;
     text-align: left;

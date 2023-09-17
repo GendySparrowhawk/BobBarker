@@ -99,7 +99,7 @@ function handleNextButton() {
 // ending page with past scores and your score to be entered
 function showScore() {
     resetState();
-    questionEl.innerHTML = `your score ${score} out of 50!`;
+    questionEl.innerHTML = `your score ${score} out of 100!`;
     nextButton.classList.add('hide')
     scoreForm.classList.remove('hide');
     var finalScore = document.querySelector('#score');
@@ -139,10 +139,7 @@ function emptyCache() {
 // event listners//
 submitScore.addEventListener('click', logScore);
 
-
-
 clearScore.addEventListener('click', emptyCache);
-
 
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < quizQuestions.length) {
@@ -198,6 +195,43 @@ var quizQuestions = [
             { text: "Aliens land and try and kiss the Spice Girls", correct: false },
             { text: "The girls deliver a baby", correct: false },
             { text: "Scary Spice dies for 30 seconds in the climax of the movie", correct: true },
+        ]
+    },
+    {
+        question: "The Naked Chicken Chalupa was available from _______",
+        answers: [
+            { text: "May 2011 - June 2011", correct: false },
+            { text: "Only May 5th 2002", correct: false },
+            { text: "two non-conseutive years: 2017 and then again in 2021", correct: true },
+            { text: "2023- right now!", correct: false },
+        ]
+    },
+    {
+        question: "The smash hit Space Jam saw the debut of which Loony Tunes character?",
+        answers: [
+            { text: "Tweety Bird 2", correct: false },
+            { text: "Lola Bunny", correct: true },
+            { text: "Foghorn Leghorn", correct: false },
+            { text: "Sam the Eagle", correct: false },
+        ]
+    },
+    {
+        question: "Frank Herbert, author of Dune, did all of the following to wait staff EXCEPT",
+        answers: [
+            { text: "Parked a hearse out front to receive faster service", correct: false },
+            { text: "Throw money at wait staff instead of waiting for the check", correct: false },
+            { text: "Go into the kitchen and start cooking food he brought from home", correct: true },
+            { text: "Demanded tables around his be cleared of poeple so he could eat in peace", correct: false },
+        ]
+    },
+ 
+    {
+        question: "Ursula K leGuin saw, and heckled Star Wars with which other sci-fi author on opening weekend?",
+        answers: [
+            { text: "George R.R. Martin", correct: false },
+            { text: "Robert Heinlein", correct: false },
+            { text: "Phillip K Dick", correct: false },
+            { text: "Kim Stanley Robinson", correct: true },
         ]
     },
     {
