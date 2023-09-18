@@ -10,6 +10,7 @@ var questionEl = document.querySelector("#question");
 var score = 0;
 var stopTimer = '';
 var currentQuestionIndex = 0;
+var viewHighscores = document.querySelector("#FinalScreen")
 var clearScore = document.querySelector("#clear-score");
 // highscore variables//
 var scoreForm = document.querySelector('.score-form');
@@ -41,6 +42,7 @@ function countDown() {
 // 1st question when quiz begins/next question//
 function showQuestion() {
     resetState();
+    nextButton.classList.add('hide');
     var currentQuestion = quizQuestions[currentQuestionIndex];
     var questionNo = currentQuestionIndex + 1;
     questionEl.innerText = questionNo + '. ' + currentQuestion.question;
@@ -133,7 +135,6 @@ function logScore(eventObj) {
 // This funciton empties the local storage and resatrts the game.
 function emptyCache() {
     localStorage.clear();
-    showScore();
 }
 
 // event listners//
@@ -148,6 +149,7 @@ nextButton.addEventListener("click", () => {
 })
 
 startBtn.addEventListener('click', startQuiz);
+viewHighscores.addEventListener('click', showScore);
 
 // question arrarys//
 var quizQuestions = [

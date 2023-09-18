@@ -46,6 +46,13 @@ h1 {
     padding: 4px;
 }
 
+.begin {
+    margin: 10px auto;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
 .window {
     background-color: aliceblue;
     width: 90%;
